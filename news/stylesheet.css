@@ -1,0 +1,10 @@
+.contaner{display: grid; grid-template-columns: 3fr 6fr;padding-left:3%;gap: 3%;
+padding:20px ;}
+
+#currentresearch h1:hover{color: rgb(87, 85, 83);}
+#currentresearch li span{display: inline; background-color: rgba(255, 255, 255, 0.179);padding: 0;}
+@media screen and (max-width:560px){
+.contaner{display: grid ;grid-template-columns:repeat(auto-fit,minmax(280px,3fr));} 
+
+}
+
