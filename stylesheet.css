@@ -18,6 +18,8 @@
         cursor: pointer;text-align:center;}
         .navbuttom{border-radius: 6px;}
 
+
+
         #mainnavcontiner{ box-shadow: 3px 3px rgb(20, 227, 227);} 
         #toplogo{height:130px ;}    
 
@@ -46,7 +48,6 @@ main{background-color: white;padding-bottom:2% ;}
     
     #parta div{background-color: white; border-radius:10% ;height:auto;}
     
-    #parta img:hover{width:60%;height:auto; border-radius:5% ; border: 5px solid black; margin-bottom:2px ;}
     #address div{text-align: left;}
     
     
@@ -85,9 +86,31 @@ main{background-color: white;padding-bottom:2% ;}
     
     @keyframes sheetpaper{from{right:90%} to{right: 0%;}    
     }
+
+    section  li{line-height: 30px;padding:5px ; border-radius: 10px;}
+    section  li:hover{background-color: bisque;animation:listanim 1.5s;}
+    @keyframes listanim{from{background-color:rgba(255, 255, 255, 0);}
+    to{background-color:   bisque;}    
+    } 
+
+section{border: 2px solid aqua;border-radius: 20px;}
+
     
     #blurerfoot{position: absolute;bottom: 0%;width: 100%;position: fixed;z-index: -3;height: 400px;background-color: rgba(33, 115, 230, 0.5);}
     
+
+
+
+
+
+
+    #graduates{ background: linear-gradient(to left,rgb(34, 183, 206),rgb(15, 93, 196));}
+ #graduates > div{display: grid; grid-template-columns: 3fr 2fr 5fr;color: aliceblue;
+    border-bottom: 1px  solid white ;padding:5px 5px ;}
+    #graduates div div{width: 100%;text-align: center;display: flex;justify-content: center;align-items: center;}
+    #graduates ::selection{ background-color: rgb(214, 43, 200);}
+
+
     footer{text-align: center;border-top:solid 3px ;display: grid ;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));margin:0px ;color: aliceblue;
     }
     footer div{ text-align: center;z-index: -1;}

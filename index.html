@@ -13,7 +13,9 @@
 
 <link href="stylesheet.css" rel="stylesheet">
 
+
 <link href="./menu.js" type="javascript">
+<link href="./graduates.js" type="javascript">
 
 
 <meta name="description" content="Dr jamali personal page">
@@ -22,7 +24,7 @@
 
 <body onclick="down()" onscroll="down()" >
 
-  <img src="images/head.jpg" alt="SUT-civil" style="position: absolute;bottom: 0%;width: 100%;position: fixed;z-index: -3;">
+  <img src="images/head.jpg" alt="SUT-civil" style="position: absolute;bottom: 0%;width: 100%;position: fixed;z-index: -3; height: 70%;">
   
   <div  
   id="blurerfoot"></div>
@@ -48,15 +50,15 @@
   
   <div onclick="openspcmenu(2)" onmousemove="openspcmenu(2)">
     publication
-    <a href="publication/papers.html" style=" display: block;width: 100%;height: 100%;">
+    <a href="#InternationalJournalPapers" style=" display: block;width: 100%;height: 100%;">
     <div class="aboutmenue2 ; aboutmenuall" style="display: none;">
-       Papers
+      International Journal Papers
     </div></a>
     <a href="publication/research.html" style=" display: block;width: 100%;height: 100%;"> 
     <div class="aboutmenue2 ; aboutmenuall" style="display: none;">
       Research
     </div></a>
-    <a href="publication/conference.html" style=" display: block;width: 100%;height: 100%;"> 
+    <a href="#SelectedInternationalConferencePapers" style=" display: block;width: 100%;height: 100%;"> 
       <div class="aboutmenue2 ; aboutmenuall" style="display: none;">
         Conference papers
       </div></a>
@@ -64,14 +66,11 @@
   </div>
   <div onclick="openspcmenu(3)" onmousemove="openspcmenu(3)">
     people
-    <a href="./people/graduates.html" style=" display: block;width: 100%;height: 100%;">
+    <a href="#GraduateStudents" style=" display: block;width: 100%;height: 100%;">
     <div class="aboutmenue3 ; aboutmenuall" style="display: none;">
       Graduate Students
     </div></a>
-    <a href="people/community.html" style=" display: block;width: 100%;height: 100%;">
-    <div class="aboutmenue3 ; aboutmenuall" style="display: none;">
-      Community
-    </div></a>
+   
     
   </div>
   <div onclick="openspcmenu(4)" onmousemove="openspcmenu(4)">
@@ -95,10 +94,7 @@
   
   </div>
   
-  <div onclick="openspcmenu(5)" onmousemove="openspcmenu(5)">
-    <a href="news/news.html" style=" display: block;width: 100%;height: 100%;"> News & Events</a>
-  
-  </div>
+ 
     </div>
   </div>
   
@@ -118,7 +114,8 @@
         margin: 10px 10px 4px 10px ;">
       -->
         <div style="display: flexbox; ">
-      <img src="images/OIP.svg" alt="sharif" style="width: auto;cursor:pointer;display: inline-block; position: fixed;z-index: 1;" 
+      <img src="images/OIP.svg" alt="sharif" style="width: auto;cursor:pointer;display: inline-block; position: fixed;z-index: 1;
+      padding-left: 5px; padding-top: 10px;" 
       id="toplogo">
       
   <div  class="overnav" style="margin-bottom:13px;direction: rtl;padding-top:5px;padding-right:5px;">
@@ -145,7 +142,7 @@
      
       
    <div style="text-align: right;">
-     <a href="home/homepage.html" style="color: black;">
+     <a href="index.html" style="color: black;">
      <h2 id="corpname" style="margin-right: 20px;">
          Dr.Mirmosadegh Jamali
          
@@ -224,14 +221,14 @@
     }
     </script>
   
-  <div style=""  class="navcontainer">
+  <div  class="navcontainer" style="background-color: white;">
     
   </div>
   
   </div>
   
   
-  <div style="height: 60px;background-color: rgb(255, 255, 255);width: 100%; "  class="navcontainer" id="mainnavcontiner">
+  <div style="height: 80px;background: rgb(255, 255, 255);width: 100%; "  class="navcontainer" id="mainnavcontiner">
     
   
   <div style="background-color: rgb(255, 255, 255);direction: rtl;" id="minimenue">
@@ -239,22 +236,19 @@
   </div>
   
    <nav id="navigation">
-    <div class="navbuttom" style="height: 45px;">
-     <a href="news/news.html" style="display: block;height: 100%;">
-    
-        News and Events
-    
-       </a>
+    <div class="navbuttom" style="height: 45px;padding-top: 10px;padding-bottom: 10px;">
+     
     </div>
     <div class="navbuttom">
       
       
-     <select name="proj" class="navbut" id="selection2" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
-       <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > Courses</option>
-       <option value="courses/fluidmechanic.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> fluid Mechanics</option>
-       <option value="courses/hydrulics.html" style="background-color: rgb(121, 121, 137);cursor: pointer;">  Hydraulics </option>
-       <option value="courses/Environmentaleng.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Environmental Hydrodynamics </option>
-       <option value="courses/creativityeng.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Creativity and Innovation in Engineering</option>
+     <select name="proj" class="navbut" id="selection2" onchange="location=this.value;" style=" cursor: pointer;gap:3px;height: 100% ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none; height:60px
+     ;color:black;"> 
+       <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;direction:ltr;height: 100%;" selected > Courses</option>
+       <option value="courses/fluidmechanic.html" style="background-color: rgb(121, 121, 137);cursor: pointer;direction:ltr;"> Fluid Mechanics</option>
+       <option value="courses/hydrulics.html" style="background-color: rgb(121, 121, 137);cursor: pointer;direction:ltr;">  Hydraulics </option>
+       <option value="courses/Environmentaleng.html" style="background-color: rgb(121, 121, 137);cursor: pointer;direction:ltr;"> Environmental Hydrodynamics </option>
+       <option value="courses/creativityeng.html" style="background-color: rgb(121, 121, 137);cursor: pointer;direction:ltr;"> Creativity and Innovation in Engineering</option>
      </select>
   <script type="text/javascript">
   setInterval(()=>{
@@ -269,29 +263,24 @@
     </div>
     
     <div class="navbuttom">
-    <select name="proj"  class="navbut" id="selection3" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
-      <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > people</option>
-      <option value="people/graduates.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Graduate Students </option>
-      <option value="people/community.html" style="background-color: rgb(121, 121, 137);cursor: pointer;">  community </option>
+    <select name="proj"  class="navbut" id="selection3" onchange="location=this.value;" style="cursor: pointer; height:60px ;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none; height:60px ;color:black;"> 
+      <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;direction:ltr;" selected > people</option>
+      <option value="#GraduateStudents" style="background-color: rgb(121, 121, 137);cursor: pointer;direction:ltr;"> Graduate Students </option>
     </select>
   </div>
     
   <div class="navbuttom">
-    <select name="proj" class="navbut"  id="selection4" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
-      <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > publication</option>
-      <option value="publication/papers.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Papers  </option>
-      <option value="publication/research.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Research And Studies </option>
-      <option value="publication/conference.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Conference Papers </option>
+    <select name="proj" class="navbut"  id="selection4" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;
+    background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:60px ;color:black;"> 
+      <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;direction:ltr;" selected > publication</option>
+      <option value="#InternationalJournalPapers" style="background-color: rgb(121, 121, 137);cursor: pointer;direction:ltr;">International Journal Papers </option>
+      <option value="publication/research.html" style="background-color: rgb(121, 121, 137);cursor: pointer;direction:ltr;"> Research And Studies </option>
+      <option value="#SelectedInternationalConferencePapers" style="background-color: rgb(121, 121, 137);cursor: pointer;direction:ltr;"> Conference Papers </option>
     </select>
   </div>
   
      
-    <div class="navbuttom">
-      <select name="proj" class="navbut"  id="selection5" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
-        <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > About</option>
-        <option value="index.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> About Dr. jamali </option>
-      </select>
-    </div>
+    
   
   
   
@@ -321,7 +310,7 @@
       <div class="noneimportant">
        <img src="images/personalimage.jpg">
 
-       <div style="padding:2% 0% ;"><b style="font-size: larger;">Dr. Mirmosadegh Jamali</b></div>
+       <div style="padding:2% 0%;"><b style="font-size: larger;">Dr. Mirmosadegh Jamali</b></div>
        <div style="padding:0.5% 0% ;">
         Professor (On leave)
        </div>
@@ -331,14 +320,33 @@
        <div style="padding:0.5% 0% ;">
        Water &   Environmental Engineering
       </div>
-      </div>
+      
+
+
+
+        <h2>Research Interests</h2>
+        <p  style=" border-radius:0px;">
+            Environmental Fluid Mechanics (stratified flows, mixing in surface waters, lake dynamics)
+        
+        Numerical Methods in Engineering (finite element method, boundary element method, finite difference method)
+        
+        Hydraulics (sediment transport, vegetated flows)
+        
+        Coastal and Ocean Engineering (wave hydrodynamics, off-shore structures, coastal sediment transport, numerical modeling)
+        
+        Thin-walled Structures
+        </p>
+        </div>
+        
+        
+
     
      
       <div class="noneimportant" id="address">
         <div ><h1 style="text-align: center; ">contacts</h1></div>
         <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>EMAIL</b></div>
        <div style="margin-bottom: 14px;">
-       <a href="mailto:jamali@sharif.edu" style="margin-bottom: 8px;color: blue;">jamali@sharif.edu</a>
+       <a href="mailto:jamali@sharif.edu" style="margin-bottom: 8px;color: blue;">jamali[at]sharif.edu</a>
        </div>
 
        <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>ADDRESS</b></div>
@@ -369,6 +377,67 @@
        <a href="mailto:aliseper2002" style="margin-bottom: 8px;">Ali M. Sepehr</a>
        </div>
 
+
+       <h2 >Journal Review</h2>
+<div style="text-align: left;padding-left: 7%;padding-top: 5px;">
+       <li>
+           Journal of Fluid Mechanics
+       </li>
+       
+       
+       
+       <li>
+           Physics of Fluids
+       
+       
+       </li>
+       
+       
+       
+       <li>
+           Journal of Hydraulic Engineering, ASCE
+       
+           
+       </li>
+       
+       
+       
+       <li>
+           Canadian Journal of Civil Engineers
+       
+       
+       </li>
+       
+       
+       <li>
+           International Journal for Numerical Methods in Fluids
+       
+           
+       </li>
+       
+       <li>
+           Advances in Water Resources
+       
+       
+       </li>
+       
+       <li>
+           Journal of Coastal research
+       
+       
+       
+       </li>
+       
+       <li>
+       
+           Journal of Hydro-Environment
+       
+       
+       </li>
+       
+       </div>
+      </div>
+
       </div>
      
       
@@ -384,14 +453,14 @@
   
   <div style="background-color: rgb(255, 255, 255);height: auto;" class="row">
     <div style="background-color:whitesmoke;">
-Graid
+Degree
     </div>
     
     <div style="background-color: whitesmoke;">
     Date
     </div>
     <div style="background-color: whitesmoke">
-Place
+ 
     </div>  
   </div> 
 
@@ -452,13 +521,16 @@ Ph.D.
         Civil Engineering, Sharif University of Technology, Tehran, Iran
 
 
-      </div>  
+      </div> 
+      
+      
+      
     </div>  
 
 
 
 
-    <h3 style="display: grid;place-content: center;">Academic Background</h3>
+    <h3 style="display: grid;place-content: center;padding-top: 20px;">Academic Background</h3>
 
     <div class="partb">
       
@@ -471,7 +543,7 @@ Ph.D.
         Date
         </div>
         <div style="background-color: whitesmoke">
-        Place
+        Department
         </div>  
       </div> 
     
@@ -565,6 +637,290 @@ Ph.D.
   </div>
 </div>
 
+<section style="margin: 3% 3%;padding: 2%;border-radius: 3%;">
+
+  <div id="minimmmmm" style="background-color: white;">
+
+  </div>
+
+  <h2 style="direction: ltr;left: 0%;margin-left: 4%;padding-top: 3%;display: block;margin-left:0% ;
+  background-color: rgb(255, 255, 255);display: grid;place-content: left;padding-bottom: 4%;" id="InternationalJournalPapers"> International Journal Papers</h2>
+  
+  <li>
+    Jamali, M., Seymour, B., and Lawrence, G.  (2003) "Asymptotic analysis of a surface-internal wave interaction", Physics of Fluids, V 15, p 47.
+
+  </li>
+  
+  <li>
+    Jamali, M., Lawrence, G., and Seymour, B. (2003) "A note on the resonant interaction between surface and interfacial waves, " Journal of Fluid Mechanics, V 491, p 1.
+
+
+  </li>
+  
+  <li>
+    Jamali, M. (2003) "Topographic effects on establishment of selective withdrawal," Physics of Fluids, V 15, p 3665.
+
+  
+  </li>
+  
+  <li>
+    Jamali, M., and Seymour , B. (2004) "Surface wave interaction with internal waves on a diffuse interface," Journal of Physical Oceanography, V 34, n 12, p 204.
+
+  
+  </li>
+  
+  <li>
+    Jamali, M., Lawrence, G., and Maloney, K. (2005) "Dispersion in varying-geometry rivers with application to methanol releases," Journal of Hydraulic Engineering, ASCE, V 131, n 5, p 390.
+
+
+
+  </li>
+  
+  <li>
+    Jamali, M., Seymour, B., and Kassaian, R. (2005) "Numerical and experimental study of flow of a stratified fluid over a sill towards a sink," Physics of Fluids, V 17, p 057106.
+
+  
+  </li>
+  
+  <li>
+    Jamali, M. (2006) "BEM modeling of surface water wave motion with laminar boundary layers," Engineering Analysis with Boundary Elements, V 30, p 14.
+
+
+  </li>
+  
+  <li>
+    Jamali, M. (2006) "A coupled boundary element-finite difference model of surface wave motion over a wall turbulent flow," International Journal for Numerical Methods in Fluids, V 51, p 371.
+
+  
+  
+  </li>
+  
+  <li>
+    Jamali, M. and Lawrence , G. ( 2006) "Viscous wave interaction due to motion of a surface wave over a sediment bed," Journal of Offshore Mechanics and Arctic Engineering, ASME, V 128, p 276.
+
+
+  
+  </li>
+  
+  <li>
+    Jamali, M. and Aghsaee, P. (2007) "Effect of a contraction on selective withdrawal of a linearly stratified fluid from a line sink," Physics of Fluids, V 19, 106602.
+
+  
+  
+  </li>
+  
+  <li>
+    Lawrence, G., Jamali, M., and Maloney, K. (2007) Closure of "dispersion in varying-geometry rivers with application to Mathanol releases," Journal of Hydraulic Engineering, ASCE, V 133, n 9, p 1094.
+
+  
+  
+  </li>
+  
+  <li>
+    Jamali, M., Nepf, H., and Zhang, X. (2008) "Exchange flow between a canopy and open water," Journal of Fluid Mechanics, V 611, p 237.
+
+  
+  
+  </li>
+  
+  <li>
+    Jamali, M. and Haddazadegan, H. (2010) "Effects of a sill on selective withdrawal through a point sink in a linearly stratified fluid," Advances in Water Resources, V 33, p 1517.
+
+  
+  
+  </li>
+  <li>
+    Jamali, M. and Seymour, B. (2011) Comment on "Method to derive the differential equation of the free surface boundary," by Chen et al, Groundwater, V 49, p 133.
+
+  
+  
+  </li>
+  
+  <li>
+    Fazeli, M. and Jamali, M. (2012) "Evolution of sub-harmonic interfacial waves generated by a surface wave in three-wave interaction," Scientia Iranica, V 19, p 225.
+
+
+  </li>
+
+  <li>
+    Tahvildari, N. and Jamali, M. (2012) “Cubic nonlinear analysis of interaction between a surface wave and two interfacial waves in an open two-layer fluid,” Fluid Dynamics Research, V 44, n5.
+
+  
+  </li>
+
+  <li>
+    Jamali, M. (2013) “Non-hydrostatic layered flows over a sill,” Fluid Dynamics Research, V 45, n 2.
+
+  
+  </li>
+
+  <li>
+    Marjani, A.A. and Jamali, M. (2014) “Role of exchange flow in salt/water balance of a saline lake,” Dynamics of Atmospheres and Oceans, V 65, pp. 1-16.
+
+  
+  </li>
+
+  <li>
+    Tofighi, M. A. and Jamali, M. (2014), “Dispersion around circular cylinder in surface wave motion,” Scientia Iranica, 21(3), 548-556.
+
+  
+  </li>
+
+  <li>
+    Safaie, A., Fazeli, M. and Jamali, M. (2014) “A technique for detection of interfacial waves forming a two-dimensional pattern,” Fluid Dynamics Research, V46.
+
+  
+  </li>
+  Fazeli, M., Jamali, M., Lawrence, G., and Seymour, B. (2015) “Growth and damping of interfacial waves on a diffuse interface,” Environmental Fluid Mechanics,  V. 15,
+
+
+  <li>
+    Fazeli, M., Safaie, A., and Jamali, M (2017) “Identification of evolving interfacial waves by spatial harmonic analysis,” Environmental Fluid Mechanics, V. 17, 647–664.
+
+  
+  </li>
+
+  <li>
+    Baghbadorani, D, Ataie-Ashtiani B., Beheshti, A., Hadjzaman M., and Jamali, M. (2018) ”Prediction of current-induced local scour around complex piers: Review, revisit, and integration,” Coastal Engineering, V 133, pp. 43-58.
+
+  
+  </li>
+
+  <li>
+    Jamali, M., Davari, H., and Shoaei, F. (2019) “Lateral dispersion in deflected emergent aquatic canopies,” Environmental Fluid Mechanics, V. 19, 833-850.
+
+  
+  </li>
+
+  <li>
+    Jamali, M., Behzadi, S., Safaie, A., and Fazeli, M. (2020), “Experimental and theoretical investigation of cubic stabilization of instability of an interface in surface wave motion,” Physics of Fluids V. 32, issue 2, DOI: 10.1063/1.5128749
+
+  
+  </li>
+  
+</section>
+
+<div  id="SelectedInternationalConferencePapers"></div>
+<section style="margin: 3% 3%;padding: 2%;border-radius: 3%;">
+
+  <div id="minimmmmm" style="background-color: white;">
+
+  </div>
+
+  <h2 style="direction: ltr;left: 0%;margin-left: 4%;padding-top: 3%;display: block;margin-left:0% ;
+  background-color: rgb(255, 255, 255);display: grid;place-content: left;padding-bottom: 4%;"> Selected International Conference Papers</h2>
+  
+  <li>
+    Modjtahedi, Dj. and Jamali, M. (1990) "BEM with Fundamental Sources placed on an Imaginary Boundary", Proceedings of 12th International Conference on Boundary Elements in Engineering held at Hokaido University, Sapporo,   Japan, Vol. 1, p 111-121, Springer-Verlag.
+
+
+  </li>
+  
+  <li>
+    Jamali, M. (1997) "Excitation of internal waves by a surface wave", Proceedings of XXVIIth Conference of IAHR, San Francisco, p 1334.
+
+
+  </li>
+  
+  <li>
+    Jamali, M. and Seymour , B. (2000) "Surface wave interaction with internal waves on a diffuse interface," Proc. 5th Int. Symp. Stratified Flows, Vancouver , Canada , p. 785.
+
+  
+  </li>
+  
+  <li>
+    Jamali, M., Lawrence , G., and Quick, M. (2000) "Generation of oblique internal waves by a surface wave,", Proc. 5th Int. Symp. Stratified Flows, Vancouver , Canada , p. 779.
+
+
+    
+  </li>
+  
+  <li>
+    Jamali, M., Lawrence, G, and Maloney, K. (2002) "Dispersion and fate of methanol spills into rivers," Proc. CSCE-ASCE Joint Environmental Engineering Conference, Niagara Falls, Canada.
+
+
+  </li>
+  
+  <li>
+    Shaaban, S., and Jamali, M. (2003) "Numerical Study of effects of a sill on selective withdrawal," Proc. XXX IAHR Congress , Greece .
+
+
+    
+  </li>
+  
+  <li>
+    Jamali, M. (2004) "BEM modeling of viscous motion of surface water waves," Proc. 23rd Int. Conf. Offshore Mech.& Arctic Eng. , ASME, Vancouver , Canada .
+
+
+  </li>
+  
+  <li>
+    Jamali, M., and Lawrence, G. (2004) "Viscous wave interaction due to motion of a surface wave over a sediment bed," Proc. 23rd Int. Conf. Offshore Mech.& Arctic Eng., ASME, Vancouver, Canada.
+
+  
+  
+  </li>
+  
+  <li>
+    Hasanzadeh, A., and Jamali,(2004) "Experimental study of scour due to breaking waves," Proc. 23rd Int. Conf. Offshore Mech. & Arctic Eng. , ASME, Vancouver , Canada .
+
+  
+  
+  </li>
+  
+  <li>
+    Jamali, M., and Lawrence , G. (2004) "Effects of variable river geometry on longitudinal dispersion," Proc. Int. Symp. on Environmental Hydraulics, Hong Kong.
+
+  
+  
+  </li>
+  
+  <li>
+  
+    Kian R. and Jamali, M. (2009) "Establishment of selective withdrawal in a two-layer reservoir with a bottom sill," Proc. 33rd IAHR Congress, Vancouver, Canada.
+
+  
+  </li>
+  
+  <li>
+    Rahnamie Zekavat P. and Jamali, M. (2009) "Longitudinal dispersion of oil spills through vegetation due to exchange flow by differential heating", Proc. 33rd IAHR Congress, Vancouver, Canada.
+
+  
+  
+  </li>
+  
+  <li>
+    Jamali, M. and Marvi, S. (2009) "Partial-depth exchange flow between canopy and open water," Proc. 13th Workshop on Physical Processes in Natural Waters, Palermo, Italy
+
+  
+  
+  </li>
+  <li>
+    Ghazvini, S. and Jamali, M. (2010) "Effects of depth variation of vegetation on vertical mixing," IAHR Environmental Hydraulics, Greece.
+
+  
+  
+  </li>
+  
+  <li>
+    Fazeli, M. and Jamali, M. (2011) "Effects of a diffuse interface on nonlinear resonant interaction between surface and interfacial waves," 7th International Symposium on Stratified Flows, Rome, Italy.
+
+  
+  </li>
+  
+</section>
+
+
+<h2 style="text-align: center;" id="GraduateStudents"> Graduate Students</h2> 
+<section id="graduates"  style="padding:10px;" >
+   
+  <script  src="graduates.js"></script>
+
+
+</section>
+
+
+
 <h3 style="display: grid;place-content: center;">Professional Affiliations</h3>
 
 <div id="partc">
@@ -631,14 +987,15 @@ Ph.D.
 
  </footer>
 
-    <div style="background-color: rgb(50, 38, 61); text-align: center;color: rgb(151, 71, 71) ;" >
-        <p> © Copy Right Civil Engineering Department <a  href="mailto:aliseper2002" style="text-decoration:none; color: white;"> ali.m sepehr</a> 2025</p>
+    <div style="background-color: rgb(50, 38, 61); text-align: center;color: rgb(151, 71, 71) ;display: flex;bottom: 0%;position: fixed;width: 100%; justify-content: center;" >
+        <p> © Copy Right Civil Engineering Department <a  href="https://alimath2002.github.io/alimath2002/" style="text-decoration:none; color: white;"> ali.m sepehr</a> 2025</p>
     </div>
 
 </body>
 
 
-
   <script  src="menu.js"></script>
+  
+
 
 </html>
